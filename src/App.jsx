@@ -7,6 +7,7 @@ import { Conteudo } from './components/basicos/Conteudo';
 import { Familia } from './components/basicos/Familia';
 import { Card } from './components/layout/Card';
 import { ListaAlunos } from './components/repeticao/ListaAlunos';
+import { TabelaProdutos } from './components/repeticao/TabelaProdutos';
 
 const App = () => {
 
@@ -14,7 +15,10 @@ const App = () => {
     <div className='apps'>
       <div className="cards">
 
-        <Card titulo="#05 - Alins" color="#DE3">
+        <Card titulo="#06 - Tabela Produtos" color="#BFF">
+          <TabelaProdutos />
+        </Card>
+        <Card titulo="#05 - Lista Alunos" color="#DE3">
           <ListaAlunos />
         </Card>
         <Card titulo="#04 - Familia" color="#F00">
