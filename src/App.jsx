@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
 
-import { Card } from './components/layout/Card'
-import { CompPar } from './components/basicos/CompPar'
-import { Aleatorio } from './components/basicos/Aleatorio'
-import { Conteudo } from './components/basicos/Conteudo'
+import { Aleatorio } from './components/basicos/Aleatorio';
+import { CompPar } from './components/basicos/CompPar';
+import { Conteudo } from './components/basicos/Conteudo';
 import { Familia } from './components/basicos/Familia';
+import { Card } from './components/layout/Card';
+import { ListaAlunos } from './components/repeticao/ListaAlunos';
 
 const App = () => {
 
   return (
     <div className='apps'>
       <div className="cards">
+
+        <Card titulo="#05 - Alins" color="#DE3">
+          <ListaAlunos />
+        </Card>
         <Card titulo="#04 - Familia" color="#F00">
           <Familia />
         </Card>
