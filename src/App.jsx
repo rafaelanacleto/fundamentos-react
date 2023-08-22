@@ -8,6 +8,7 @@ import { Familia } from './components/basicos/Familia';
 import { Card } from './components/layout/Card';
 import { ListaAlunos } from './components/repeticao/ListaAlunos';
 import { TabelaProdutos } from './components/repeticao/TabelaProdutos';
+import { Input } from './components/formulario/Input';
 
 const App = () => {
 
@@ -15,6 +16,9 @@ const App = () => {
     <div className='apps'>
       <div className="cards">
 
+        <Card titulo="#07 - Input componente controlado" color="#CAF">
+          <Input />
+        </Card>
         <Card titulo="#06 - Tabela Produtos" color="#BFF">
           <TabelaProdutos />
         </Card>
