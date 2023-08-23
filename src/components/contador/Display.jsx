@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export const Display = (props) => {
   return (
-    <div>Display</div>
-  )
-}
+    <div>
+      <p>Valor State Numero {props.numero}</p>
+      <hr />
+    </div>
+  );
+};

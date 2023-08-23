@@ -1,10 +1,11 @@
 import React from "react";
+import { Display } from "./Display";
 
 export default class Contador extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(this.props.numeroInicial);
+       
         this.state = {            
             numero: parseInt(this.props.numeroInicial)
         };
@@ -27,8 +28,7 @@ export default class Contador extends React.Component {
     render() {
         return (
             <div>
-                <p>Valor State Numero {this.state.numero}</p>
-                <hr />
+               <Display numero={this.state.numero} />
                 <button onClick={this.increment}>+</button>
                 <button onClick={this.decrement}>-</button>
             </div>
