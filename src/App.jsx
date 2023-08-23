@@ -9,6 +9,7 @@ import { Card } from './components/layout/Card';
 import { ListaAlunos } from './components/repeticao/ListaAlunos';
 import { TabelaProdutos } from './components/repeticao/TabelaProdutos';
 import { Input } from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 const App = () => {
 
@@ -16,6 +17,9 @@ const App = () => {
     <div className='apps'>
       <div className="cards">
 
+        <Card titulo="#08 - Class Contador" color="#F2A">
+          <Contador numeroInicial={ 10 } />
+        </Card>
         <Card titulo="#07 - Input componente controlado" color="#CAF">
           <Input />
         </Card>
