@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export const Botoes = (props) => {
   return (
-    <div>Botoes</div>
-  )
-}
+    <div>
+      <button onClick={props.increment}>+</button>
+      <button onClick={props.decrement}>-</button>
+    </div>
+  );
+};
